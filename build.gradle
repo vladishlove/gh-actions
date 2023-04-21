@@ -1,0 +1,3 @@
+tasks.register('build') {
+    logger.log(LogLevel.INFO, "hello")
+}
