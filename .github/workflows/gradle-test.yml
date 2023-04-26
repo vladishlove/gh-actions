@@ -14,4 +14,4 @@ jobs:
       uses: gradle/gradle-build-action@v2
 
     - name: Run build with Gradle Wrapper
-      run: ./gradlew otherTask -b .github/workflow/gradle/filename.gradle
+      run: ./gradlew otherTask -b .github/workflows/gradle/filename.gradle
