@@ -12,4 +12,4 @@ jobs:
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
     - name: Run build with Gradle Wrapper
-      run: ./gradlew otherTask -b filename.gradle
+      run: ./gradlew otherTask -b ./github/filename.gradle
