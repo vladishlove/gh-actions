@@ -9,7 +9,9 @@ jobs:
     steps:
     - name: Checkout project sources
       uses: actions/checkout@v2
+
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
+
     - name: Run build with Gradle Wrapper
-      run: ./gradlew otherTask -b ./github/filename.gradle
+      run: ./gradlew otherTask -b .github/filename.gradle
