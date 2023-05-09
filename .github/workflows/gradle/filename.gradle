@@ -1,3 +1,13 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:latest.release"
+    }
+}
+apply plugin: "com.jfrog.artifactory"
+
 tasks.register('otherTask') {
     logger.log(LogLevel.INFO, "hello")
 }
